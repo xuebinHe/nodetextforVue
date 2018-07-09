@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>vue test1</title>
+    <script src="../vue.2.5.16.js"></script>
+</head>
+<body>
+    <div id="app">
+        <h3>{{ message }}</h3>
+    </div>
+    <div id="app2">
+        <h5>{{ loadtime }}</h5>
+        <p v-bind:title="message">鼠标悬停几秒看看</p>
+    </div>
+
+    <div id="app4">
+        <ul>
+            <li v-for="todo in todos">{{ todo.text }}</li>
+        </ul>
+    </div>
+
+    <div id="app5">
+        <p>{{message}}</p>
+        <button v-on:click="reverseMessage">逆转消息</button>
+    </div>
+    
+    <div id="app6">
+        <ul>
+                <todo-item></todo-item>
+        </ul>
+        <p>{{ message }}</p>
+        <input type="text" v-model="message">
+    </div>
+
+    <div id="app7">
+        <ol>
+            <todo-item v-for="todo in todos"
+                v-bind:todo="todo"
+                v-bind:key="todo.id"
+                ></todo-item>
+        </ol>
+    </div>
+</body>
+<script src="./index.js"></script>
+</html>
