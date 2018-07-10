@@ -2,3 +2,12 @@
     margin: 0;
     padding: 0;
 }
+.redtext {
+    color: red;
+}
+.bluetext {
+    color: blue;
+}
+.bigfont {
+    font-size: 40px;
+}
