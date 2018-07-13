@@ -20,7 +20,7 @@ var app = new Vue ({
             return ;
         },
         changeColor: function () {
-            this.textColor = 'rgb('+ 255*Math.random() +',' + 255*Math.random() +','+ 255*Math.random() +')'
+            this.textColor = 'rgba('+ 255*Math.random() +',' + 255*Math.random() +','+ 255*Math.random() +','+ Math.random() +')'
             return ;
         }
     },

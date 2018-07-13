@@ -13,7 +13,7 @@
         <button @click="biggerFont()">变大</button>
         <button @click="changeColor()">变色</button>
         &nbsp;&nbsp;&nbsp;&nbsp;
-        <button @click="fontsize=1;">给劳资变回去</button>
+        <button @click="fontsize=1;textColor=''">给劳资变回去</button>
         <p :class="comStyle" :style="{fontSize: fontsize + 'rem',color: textColor}">message: {{ message }}{{ time }}</p>
     </div>   
 </body>
