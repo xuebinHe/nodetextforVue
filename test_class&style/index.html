@@ -10,10 +10,11 @@
 </head>
 <body>
     <div id="app">
-        <button @click="changeClass()">变大变色</button>
+        <button @click="biggerFont()">变大</button>
+        <button @click="changeColor()">变色</button>
         &nbsp;&nbsp;&nbsp;&nbsp;
-        <button @click="fontsize=1;isRed=false;isBlue=true;">给劳资变回去</button>
-        <p :class="comStyle" :style="{fontSize: fontsize + 'rem'}">message: {{ message }}{{ time }}</p>
+        <button @click="fontsize=1;">给劳资变回去</button>
+        <p :class="comStyle" :style="{fontSize: fontsize + 'rem',color: textColor}">message: {{ message }}{{ time }}</p>
     </div>   
 </body>
 <script src="./index.js"></script>

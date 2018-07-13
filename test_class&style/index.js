@@ -6,15 +6,23 @@ var app = new Vue ({
         time: new Date().toLocaleString(),
         isRed: false,
         isBlue: true,
-        fontsize: 1
+        fontsize: 1,
+        textColor: ''
     },
     methods: {
         changeClass: function () {
             this.isBlue = !this.isBlue;
             this.isRed = !this.isRed;
-            this.fontsize += 1;
             return ;
         },
+        biggerFont:function () {
+            this.fontsize += 0.1;
+            return ;
+        },
+        changeColor: function () {
+            this.textColor = 'rgb('+ 255*Math.random() +',' + 255*Math.random() +','+ 255*Math.random() +')'
+            return ;
+        }
     },
     computed: {
         comStyle: function () {
